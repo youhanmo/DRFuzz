@@ -76,9 +76,14 @@ We use 4 popular DL models based on 4 datasets under five regression scenarios, 
 Please note that if you encounter the following error 'TypeError: Descriptors can not be created directly.', you may need to downgrade the protobuf package to 3.20.x or lower. It is so rarely happened. You can use 'pip install protobuf==3.20.1' to avoid this circumstance. Still, if you are confused with the environment setting, we also provided a file named `requirement.txt` to facilitate the installation process. You can directly use the script below. You can choose to use _pip_ or _conda_ in the script.
 
 ~~~
-pip install -r requirements.txt
+pip install -r requirement.txt
 ~~~
 
+Please note that if your are alerted that you are missing corresponding `.so` file in your environment, it indicates that you should install the corresponding library `libglib2.0-dev`. You may use the script below.
+
+~~~
+apt-get install libglib2.0-dev
+~~~
 
 ## Reproducibility
 
@@ -88,11 +93,11 @@ We conducted 20 experiments in `DRFuzz` of which the libraries are as described 
 
 **Step 0:** Please install the above runtime environment.
 
-**Step 1:** Clone this repository. Download the dataset and models from OneDrive. 
+**Step 1:** Clone this repository. Download the dataset and models from our Google-Drive. 
 Save the code and unzip datasets and models to `/your/local/path/`, e.g. `/your/local/path/models` and `/your/local/path/dataset`. 
 (`/your/local/path/` should be the absolute path on your server, e.g. `/home/user_xxx/`) 
 
-**Step 2:** Train yourself DCGAN models and save them to `/your/local/path/dcgan`
+**Step 2:** Train yourself DCGAN models and save them to `/your/local/path/dcgan`. (Or you can use the one provided by us for reproductivity.)
 
 **Step 3:** Edit configuration files `/your/local/path/src/experiment_builder.py` and `/your/local/path/dcgan/DCGAN_utils.py` in order to set the dataset, model and DCGAN model path into `DRFuzz`
 
@@ -116,7 +121,7 @@ main.py contains all the configurations for our experimentation.
 
 `--coverage` refers to the coverage used guide the fuzzing process; please set it to 'change' if you want to use `DRFuzz`; other choices are for compared approaches such as DeepHunter.
 
-`--time` refers to the time of running our experiments. We set it to 1440 minutes (24 hours) for our experiment.
+`--time` refers to the time of running our experiments. We set it to 1440 minutes (24 hours) for our experiment. For quick installation, you can set it to 5 minutes as a try.
 
 ## Reusability
 
