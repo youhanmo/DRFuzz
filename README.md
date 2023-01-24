@@ -89,17 +89,17 @@ apt-get install libglib2.0-dev
 
 ### Environment
 
-We conducted 20 experiments in `DRFuzz` of which the libraries are as described above. 
+We conducted 20 experiments in `DRFuzz`. The basic running steps are presented as follows:
 
 **Step 0:** Please install the above runtime environment.
 
 **Step 1:** Clone this repository. Download the dataset and models from our Google-Drive. 
-Save the code and unzip datasets and models to `/your/local/path/`, e.g. `/your/local/path/models` and `/your/local/path/dataset`. 
-(`/your/local/path/` should be the absolute path on your server, e.g. `/home/user_xxx/`) 
+Save the code and unzip datasets and models to `/your/local/path/`, e.g., `/your/local/path/models` and `/your/local/path/dataset`. 
+(`/your/local/path/` should be the absolute path on your server, e.g., `/home/user_xxx/`) 
 
 **Step 2:** Train yourself DCGAN models and save them to `/your/local/path/dcgan`. (Or you can use the one provided by us for reproductivity.)
 
-**Step 3:** Edit configuration files `/your/local/path/src/experiment_builder.py` and `/your/local/path/dcgan/DCGAN_utils.py` in order to set the dataset, model and DCGAN model path into `DRFuzz`
+**Step 3:** Edit configuration files `/your/local/path/src/experiment_builder.py` and `/your/local/path/dcgan/DCGAN_utils.py` in order to set the dataset, model, and DCGAN model path into `DRFuzz`
 
 ### Running DRFuzz
 
