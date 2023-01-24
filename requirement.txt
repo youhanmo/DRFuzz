@@ -36,13 +36,11 @@ scikit-learn==1.0.2
 scipy==1.7.3
 six==1.16.0
 sklearn==0.0
-tensorboard==1.15.0
 tensorflow==1.15.0
-tensorflow-estimator==1.15.1
-tensorflow-probability==0.15.0
 termcolor==1.1.0
 threadpoolctl==3.0.0
 typing_extensions==4.0.1
 Werkzeug==2.0.2
 wrapt==1.13.3
 zipp==3.7.0
+opencv-python-headless
