@@ -63,7 +63,7 @@ We use 4 popular DL models based on 4 datasets under five regression scenarios, 
 
 ## The Requirements:
 
-- python==3.7
+- python==3.7  (In fact 3.7.5 and 3.7.16 fits our work)
 
 - keras==2.3.1 
 
@@ -73,7 +73,7 @@ We use 4 popular DL models based on 4 datasets under five regression scenarios, 
 
 - h5py==2.10.0
 
-Please note that if you encounter the following error 'TypeError: Descriptors can not be created directly.', you may need to downgrade the protobuf package to 3.20.x or lower. It is so rarely happened. You can use 'pip install protobuf==3.20.1' to avoid this circumstance. Still, if you are confused with the environment setting, we also provided a file named `requirement.txt` to facilitate the installation process. You can directly use the script below. You can choose to use _pip_ or _conda_ in the script.
+Please note that if you encounter the following error 'TypeError: Descriptors can not be created directly.', you may need to downgrade the protobuf package to 3.20.x or lower. It is so rarely happened. You can use 'pip install protobuf==3.20.1' to avoid this circumstance. Still, if you are confused with the environment setting, we also provided a file named `requirement.txt` to facilitate the installation process. You can directly use the script below. You can choose to use _pip_ or _conda_ in the script. 
 
 ~~~
 pip install -r requirement.txt
@@ -84,6 +84,8 @@ Please note that if your are alerted that you are missing corresponding `.so` fi
 ~~~
 apt-get install libglib2.0-dev
 ~~~
+
+We strongly suggest you run this project on **Linux**. We implemented the entire project on **Linux version 4.18.0-15-generic**. We will provide the configuration on windows in this project description in the future.
 
 ## Reproducibility
 
