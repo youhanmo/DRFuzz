@@ -86,7 +86,7 @@ Please note that if your are alerted that you are missing corresponding `.so` fi
 apt-get install libglib2.0-dev
 ~~~
 
-We strongly suggest you run this project on **Linux**. We implemented the entire project on **Linux version 4.18.0-15-generic**. We will provide the configuration on windows in this project description in the future. We also provide you with the docker image of DRFuzz on \url{https://drive.google.com/file/d/1rIpzyY_jWFPp-ZuvKl_lZNH1y4HvRzHz/view?usp=sharing}. The code has been downloaded in the directory `/home/share/DRFuzz-main`, you can use the conda environment `drfuzz` by the script below to using the artifact.
+We strongly suggest you run this project on **Linux**. We implemented the entire project on **Linux version 4.18.0-15-generic**. We will provide the configuration on windows in this project description in the future. We also provide you with the docker image of DRFuzz on https://drive.google.com/file/d/1rIpzyY_jWFPp-ZuvKl_lZNH1y4HvRzHz/view?usp=sharing. The code has been downloaded in the directory `/home/share/DRFuzz-main`, you can use the conda environment `drfuzz` by the script below to using the artifact.
 
 ~~~
 source activate drfuzz
