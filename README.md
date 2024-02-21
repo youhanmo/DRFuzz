@@ -140,7 +140,7 @@ Secondly, the users are required to train a simple Discriminator of GAN (e.g., i
 
 Please do not forget to name your own regression scenarios and regression datasets, setting the corresponding parameters (or configurations) in `params` so that you can load the parameters through experimental scripts.
 
-### Extra Files
+## Extra Files
 
 For users who want to fetch the kmnc_profile file, please see the link below:
 
